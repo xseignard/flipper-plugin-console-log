@@ -1,0 +1,52 @@
+{
+  "$schema": "https://fbflipper.com/schemas/plugin-package/v2.json",
+  "name": "flipper-plugin-console-log",
+  "description": "console.log in Flipper devtools",
+  "id": "console-log",
+  "version": "1.0.0",
+  "pluginType": "device",
+  "supportedDevices": [
+    {
+      "os": "Metro"
+    }
+  ],
+  "main": "dist/bundle.js",
+  "flipperBundlerEntry": "src/index.tsx",
+  "license": "MIT",
+  "keywords": [
+    "flipper-plugin",
+    "react-native"
+  ],
+  "icon": "apps",
+  "title": "console.log",
+  "scripts": {
+    "lint": "flipper-pkg lint",
+    "prepack": "flipper-pkg lint && flipper-pkg bundle",
+    "build": "flipper-pkg bundle",
+    "watch": "flipper-pkg bundle --watch",
+    "test": "jest --no-watchman"
+  },
+  "peerDependencies": {
+    "antd": "latest",
+    "flipper": "latest",
+    "flipper-plugin": "latest"
+  },
+  "devDependencies": {
+    "@babel/preset-react": "latest",
+    "@babel/preset-typescript": "latest",
+    "@testing-library/react": "latest",
+    "@types/jest": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "@types/traverse": "^0.6.32",
+    "antd": "latest",
+    "flipper": "latest",
+    "flipper-pkg": "latest",
+    "flipper-plugin": "latest",
+    "jest": "latest",
+    "typescript": "latest"
+  },
+  "dependencies": {
+    "traverse": "^0.6.6"
+  }
+}
